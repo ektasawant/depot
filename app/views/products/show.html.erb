@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+
+
+<p>
+  <strong>Title</strong>
+  <%= @product.title %>
+</p>
+
+<p>
+  <strong>Description</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Image Url:</strong>
+  <%= @product.image_url %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+</body>
+</html>
