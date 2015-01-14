@@ -1,0 +1,8 @@
+<head>
+	<title>Edit cart <%= @cart.id %></title>
+</head>
+<h1>Cart </h1>
+<%= form_for(@cart,:url=> { :action=> "update" }) do |f| %>
+<p><%= f.submit "Update" %></p>
+<% end %>
+</html>
