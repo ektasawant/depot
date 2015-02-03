@@ -19,9 +19,16 @@
 </p>
 <p>
   <strong>Price:</strong>
-  <%= @product.price %>
+    <% if I18n.locale.to_s == "es" %>
+    	<%= @product.price * 0.88 %>
+  	<%else %>
+  		<%= @product.price %>
+	<% end %>
 </p>
-
+<p>
+  <strong>Locale:</strong>
+  <%= @product.locale %>
+</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
